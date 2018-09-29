@@ -1,0 +1,4 @@
+John bench mark:
+
+Loaded 1000 password hashes with 1000 different salts (md5crypt, crypt(3) $1$ [MD5 256/256 AVX2 8x3])
+No password hashes left to crack (see FAQ)
