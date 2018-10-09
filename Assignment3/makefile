@@ -1,6 +1,7 @@
 
 download:
 	wget https://us.download.nvidia.com/XFree86/Linux-x86_64/367.128/NVIDIA-Linux-x86_64-367.128.run
+	wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
 
 update:
 	sudo apt update
