@@ -35,26 +35,14 @@ convert:
 reconvert:
 	sed -E 's/^sha256:(.+):(.+):(.+):(.+)/$pbkdf2-sha256$\1$\2$\3:\4/' | sed 's/:/ /' | sed -E 's/^([^$]............) (.......).$/\1 \2/
 
-attack1:
-	hashcat -a 1 -m 500 -o md5crypt.broken --outfile-format=3 -w 3 md5crypt.hashes dict/four_dict.txt dict/four_dict.txt
 
-attack2:
-	hashcat -a 1 -m 500 -o md5crypt.broken --outfile-format=3 -w 3 md5crypt.hashes dict/four_rev_dict.txt dict/four_rev_dict.txt
+join:
+	cat scss5.txt scss6.txt scss7.txt scss8.txt scss9.txt scss10.txt > combined2.txt
 
-attack3:
-	hashcat -a 1 -m 500 -o md5crypt.broken --outfile-format=3 -w 3 md5crypt.hashes dict/four_rev_dict.txt dict/four_dict.txt
+sort:
+	sort combined2.txt > combined2sorted.txt
 
-attack4:
-	hashcat -a 1 -m 500 -o md5crypt.broken --outfile-format=3 -w 3 md5crypt.hashes dict/four_dict.txt dict/four_rev_dict.txt
+unique:
+	uniq combined2sorted.txt final2.txt
 
-attack5:
-	hashcat -a 1 -m 500 -o md5crypt.broken --outfile-format=3 -w 3 md5crypt.hashes dict/three_dict.txt dict/three_dict.txt
 
-attack6:
-	hashcat -a 1 -m 500 -o md5crypt.broken --outfile-format=3 -w 3 md5crypt.hashes dict/three_dict.txt dict/three_rev_dict.txt
-
-attack7:
-	hashcat -a 1 -m 500 -o md5crypt.broken --outfile-format=3 -w 3 md5crypt.hashes dict/three_rev_dict.txt dict/three_dict.txt
-
-attack8:
-	hashcat -a 1 -m 500 -o md5crypt.broken --outfile-format=3 -w 3 md5crypt.hashes dict/three_rev_dict.txt dict/three_rev_dict.txt
