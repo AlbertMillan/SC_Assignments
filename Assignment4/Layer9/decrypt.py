@@ -97,12 +97,12 @@ def encrypt(raw, key):
 
 ###<----Main---->##
 
-with open('layers/layer7.json') as f:
+with open('layer9.json') as f:
     inferno = json.load(f)
 
 
 
-cracked = load_doc('cracked_layer7.txt')
+cracked = load_doc('lvl9.txt')
 cracked_pairs = to_pairs(cracked)
 
 hashes = map(str, inferno['hashes'])
@@ -112,12 +112,14 @@ ct = str(inferno['ciphertext'])
 p=[]
 sh =[]
 ## Use pot file and layer object to match the hash->password->share
-for i in range(0,len(hashes)):
+myhashes = list(list(hashes))
+myshares = list(list(shares))
+for i in range(0,len(myhashes)):
     for j in range(0, len(cracked_pairs)):
-        if(hashes[i]==cracked_pairs[j][0]):
-            cracked_pairs[j].append(shares[i])
+        if(myhashes[i]==cracked_pairs[j][0]):
+            cracked_pairs[j].append(myshares[i])
             p.append(cracked_pairs[j][1])
-            sh.append(shares[i])
+            sh.append(myshares[i])
 
 secret = pwds_shares_to_secret(p, sh)
 

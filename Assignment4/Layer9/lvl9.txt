@@ -52,3 +52,8 @@ $sha1$480000$lXnSNW2B$Rljql8LYzAbLpD52AMmBpTz2Ob3F:liete3
 $sha1$480000$qVHIAQLk$O9UNCTD7oHIOddWFX7edsqEvaB1O:mercena7
 $sha1$480000$NGahuck4$sZQenxHxTtFyOxGBetD3IbygdOk2:onpebb
 $sha1$480000$B5sIvZLg$6o6Eg9wQP/XsxuitIpxOhK9U.x.X:orpreeya
+$sha1$480000$vyIlRWDc$.dbhpDhhwzoWV8Fte4eERSR.q4No:9estrade
+$sha1$480000$zOGuV86f$klDCia/2/Ocv8jGcGBJIKji/sEiF:9tuntoja
+$sha1$480000$cZJFKUa5$1..h1BocXfu0uso5F6baMVjcoawc:ab1A7
+$sha1$480000$lVjgMWbK$kWPGlV78GwyM.C/agEFPAb9p7h.f:acCxM
+$sha1$480000$96DI6j9B$CBIvzRDph51l0qEMZpCHB2qeh5oj:Algas
